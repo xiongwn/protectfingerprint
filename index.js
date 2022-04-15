@@ -45,7 +45,7 @@ for (i = 0; i < length; i++) {
 
 document.execCommand = null //防止获取clipboard
 
-window.screen = null //这个方法防止读屏幕信息，其实读的方式有很多，这只防止了其中之一
+window.screen = null //这个方法防止读屏幕宽高，其实读的方式有很多，这只防止了其中之一，主要是我懒
 
 window.Intl.DateTimeFormat = undefined //这是专门读你时区的，大部分网站禁了没事
 
