@@ -1,5 +1,5 @@
 # 浏览器指纹保护脚本
-#### 本脚本旨在对防追踪有一定需求，同时又忍不了匿名网速度的同学。脚本搭配代理、adblock、[trace浏览器插件](https://chrome.google.com/webstore/detail/njkmjblmcfiobddjgebnoeldkjcplfjb)使用，这个插件可以防webrtc、canvas指纹、在请求header里加入x-forward等假参数、cookie eater等<s>配合以下代码没有防不住的追踪器</s>。index.js文件里的代码配合油猴/暴力猴，要保证页面script运行前就加载。
+#### 本脚本旨在对防追踪有一定需求，同时又忍不了匿名网速度的同学。脚本搭配代理、adblock、[trace浏览器插件](https://chrome.google.com/webstore/detail/njkmjblmcfiobddjgebnoeldkjcplfjb)使用，这个插件可以防webrtc、canvas指纹、在请求header里加入x-forward等假参数、cookie eater等<s>配合以下代码没有防不住的追踪器</s>。index.js文件里的代码配合油猴/暴力猴，要保证页面script运行前就加载。所以防追踪是一套方案，你还可以搭配虚拟机虚拟网卡等等等等，目的只是不想被大数据盯着。
 
 ##### 代码里防的东西都注释了，可以去[browserleaks](https://browserleaks.com/)检测一下自己各项的hash，目前测了不少指纹检测的网站，只有这个是不会把网页卡死的。不少检测网站或结果出不来都是去掉了相应的功能来实现的，比如检测网站基本都没有判断webgl2的兼容性就直接new了，那肯定要报错卡死的。
 #####  用adblock的一个好处是可以自定义屏蔽url，chrome自带的屏蔽必须要打开控制台，影响平时使用。adblock/隐私獾还可以屏蔽追踪器，缺点是部分网站加载不了。另外用了屏蔽插件后也会暴露我们用了插件，当然大家都用，撞了也就撞了。
