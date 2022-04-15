@@ -6,7 +6,7 @@ WebGL2RenderingContext = null
 WebGLSync = null
 WebGLBuffer = null
 
-//浏览器特性，其实就是部分h5的api，检测你支持哪些api来获取你的h5指纹，这个地方不做处理其实也可以，因为高版本chrome撞的概率很大，这里采用随机概率抽一部分屏蔽，可以自己根据需要增减
+//浏览器特性，其实就是部分h5的api，检测你支持哪些api来获取你的h5指纹，这个地方注释掉其实也可以，因为高版本chrome撞的概率很大，这里采用随机概率抽一部分屏蔽，可以自己根据需要增减
 let feature = [
   "history",
   "History",
