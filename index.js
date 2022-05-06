@@ -128,7 +128,7 @@ delete o.clipboard
 window.navigator = o
 console.log("o", window.navigator)
 
-delete window.indexedDB // 禁用某网站存储不会对indexedDB生效，因此防止策略是删掉indexedDB，注意window.indexedDB = null的写法在某些浏览器并不能真正禁止访问
+delete window.indexedDB //注意window.indexedDB = null的写法在某些浏览器并不能真正禁止访问
 
 // 清除cookie：某些网站如b站直接禁用bilibili.com域名cookie会导致页面无法正常加载，所以策略改变现有cookie，并清空localStorage，b站的cookie都不是http-only的因此这个写法有效。像知乎有http-only但对cookie没有绝对要求的网站直接在浏览器禁止该网站cookie即可
 // setInterval(()=>{
